@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Report Generator</h1>
+        <label for="zikr">যিকির :</label>
+        <input type="text" id="zikrCount" placeholder="[কতজন]">
+        <select id="zikrRegularity">
+            <option value="নিয়মিত">নিয়মিত</option>
+            <option value="অনিয়মিত">অনিয়মিত</option>
+        </select>
+        <br>
+
+        <label for="pashAnpash">পাছ-আনপাছ :</label>
+        <input type="text" id="pashAnpashCount" placeholder="[কতজন]">
+        <select id="pashAnpashRegularity">
+            <option value="নিয়মিত">নিয়মিত</option>
+            <option value="অনিয়মিত">অনিয়মিত</option>
+        </select>
+        <br>
+
+        <label for="durood">এশ-ফজর দুরুদ শরীফ :</label>
+        <input type="text" id="duroodCount" placeholder="[কতজন]">
+        <select id="duroodRegularity">
+            <option value="নিয়মিত">নিয়মিত</option>
+            <option value="অনিয়মিত">অনিয়মিত</option>
+        </select>
+        <br>
+
+        <label for="hourlyZikr">এক ঘন্টা যিকির :</label>
+        <input type="text" id="hourlyZikrCount" placeholder="[কতজন]">
+        <br>
+
+        <label for="mazlis">🔸সাইয়্যিদুল আইয়াদ শরীফ  মজলিসে সংযুক্ত করা :</label>
+        <input type="text" id="mazlisCount" placeholder="[কতজন]">
+        <br>
+
+        <label for="sunnatMarketing">🔸সুন্নত মুবারক প্রচার ও বিক্রয় :</label>
+        <input type="text" id="sunnatMarketingCount" placeholder="[কতজন]">
+        <br>
+
+        <label for="sm40Time">🔸SM40 তে সময় দেওয়া :</label>
+        <input type="text" id="sm40Count" placeholder="[কতজন]">
+        <input type="text" id="sm40Hours" placeholder="[কতঘন্টা]">
+        <br>
+
+        <label for="teamMembers">🔸টিম সদস্য :</label>
+        <input type="text" id="teamMembersCount" placeholder="[কতজন]">
+        <br>
+
+        <label for="newMembers">🔸নতুন সদস্য বৃদ্ধি :</label>
+        <input type="text" id="newMembersCount" placeholder="[কতজন]">
+        <br>
+
+        <label for="communicationMembers">🔸সদস্য বৃদ্ধিতে যোগাযোগ :</label>
+        <input type="text" id="communicationMembersCount" placeholder="[কতজন]">
+        <br>
+
+        <label for="meetingAttendance">🔸মিটিংয়ে সদস্য উপস্থিত থাকতে বলা :</label>
+        <input type="text" id="meetingAttendanceCount" placeholder="[কতজন]">
+        <br>
+
+        <label for="lastWeekAttendance">🔸গত সপ্তাহে সদস্য উপস্থিতি :</label>
+        <input type="text" id="lastWeekAttendanceCount" placeholder="[কতজন]">
+        <br>
+
+        <label for="teamMeeting">🔸টিম মিটিং করা :</label>
+        <select id="teamMeetingStatus">
+            <option value="হয়েছে">হয়েছে</option>
+            <option value="হয়নি">হয়নি</option>
+        </select>
+        <br>
+
+        <label for="translationPages">🔸লক্ষ্যমাত্রা অনুযায়ী টিম রিপোর্ট নিম্নরূপ :-</label>
+        <input type="text" id="translationPagesCount" placeholder="[কত পৃষ্ঠা অনুবাদ করা হয়েছে]">
+        <br>
+
+        <!-- Add more fields based on your requirements -->
+
+        <button onclick="generateReport()">Generate Report</button>
+        <div id="report"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
